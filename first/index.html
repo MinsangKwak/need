@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="커스텀 막대 그래프" />
+    <meta name="author" content="곽민상" />
+    <meta property="og:title" content="커스텀 막대 그래프" />
+    <meta property="og:description" content="swiper.js와 chart.js섞어서 만듬" />
+    <meta property="og:url" content="웹사이트 URL" />
+    <title>v4</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Noto+Sans+KR:wght@600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- s: page -->
+    <div class="page">
+        <!-- s: card -->
+        <h2>Chart</h2>
+        <div class="card">
+            <div class="card-inner">
+                <!-- s: custom-swiper-container -->
+                <div class="custom-swiper-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slides with charts will be dynamically inserted here -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div id="custom-tooltip" class="custom-tooltip"></div>
+                </div>
+                <!-- e: custom-swiper-container -->
+            </div>
+        </div>
+        <!-- e: card -->
+    </div>
+    <!-- e: page -->
+
+    <!-- s: js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="common.js"></script>
+    <!-- e: js -->
+</body>
+
+</html>
