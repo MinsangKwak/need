@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="flex items-center justify-center bg-gray-100 shadow rounded-xl">
+    <div class="">
+        <div class="flex-col justify-center flex gap-4 items-start mx-4 px-12">
+            <div class="w-full mx-auto">
+                <div class="py-6">
+                    <p class="text-base font-semibold leading-6 text-gray-900 uppercase">
+                        bulletin board post
+                    </p>
+                    <div class="board bg-white mt-4">
+                        <ul class="list-board divide-y divide-gray-200">
+                            <li class="block hover:bg-gray-50 dark:hover:bg-gray-900" data-id="2">
+                                <a class="block" href="#">
+                                    <div class="px-4 py-4 sm:px-6">
+                                        <div class="flex items-center justify-between">
+                                            <p class="text-gray-700 text-md dark:text-white md:truncate">예시로 작성해주시면 됩니다.
+                                            </p>
+                                            <div class="flex flex-shrink-0 ml-2">
+                                                <p
+                                                    class="inline-flex px-2 text-xs font-semibold leading-5 text-black bg-red-100 rounded-full">
+                                                    FOR TEST
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-2 sm:flex sm:justify-between">
+                                            <div class="sm:flex">
+                                                <p class="flex items-center text-gray-500 text-sm">
+                                                    DATE HERE
+                                                </p>
+                                            </div>
+                                        </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- e: board -->
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-col justify-center flex gap-4 items-start mx-4 px-12">
+            <div class="w-full mx-auto">
+                <!-- s: card -->
+                <div class="card">
+                    <div class="card-inner py-6">
+                        <p class="text-base font-semibold leading-6 text-indigo-500 uppercase">
+                            Write a post
+                        </p>
+                        <h4
+                            class="mt-2 text-2xl font-extrabold leading-8 text-gray-900 dark:text-white sm:text-3xl sm:leading-9">
+                            Please write down what you did today
+                        </h4>
+                        <p class="mt-4 text-lg leading-6 text-gray-500 dark:text-gray-300">
+                            Even if it's trivial, it's okay. Please feel free to leave a
+                            comment.
+                        </p>
+                        <div class="item-inner mb-4 mt-8">
+                            <textarea name="" id="write" cols="30" rows="10"
+                                class="textarea flex-1 w-full px-4 py-2 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                </textarea>
+                        </div>
+                        <div class="btn-container">
+                            <button type="button"
+                                class="py-4 px-6 bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full"
+                                id="btn-write">
+                                작성하기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- e: card -->
+            </div>
+        </div>
+    </div>
+
+    <!-- s: js -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="common.js"></script>
+    <!-- e: js -->
+</body>
+
+</html>
